@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run build:assets && npm run build:src",
-    "build:assets": "cp /img/* dist\\img\\",
-    "build:src": "cp /src/* dist\\js\\"
+    "build:assets": "cp ./img/* dist\\img\\",
+    "build:src": "cp ./src/* dist\\js\\"
   },
   "author": "@mariavnn",
   "license": "MIT"
