@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/styles.css">
+    <title>DogAPI Project</title>
+</head>
+<body>
+    <header>
+        <button class="header-arrow inactive">
+            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M23.121 44.121C22.5584 44.6834 21.7955 44.9994 21 44.9994C20.2045 44.9994 19.4416 44.6834 18.879 44.121L6.87897 32.121C6.31656 31.5584 6.00061 30.7955 6.00061 30C6.00061 29.2045 6.31656 28.4416 6.87897 27.879L18.879 15.879C19.4448 15.3325 20.2026 15.0301 20.9892 15.037C21.7758 15.0438 22.5282 15.3593 23.0844 15.9155C23.6406 16.4718 23.9562 17.2242 23.963 18.0108C23.9698 18.7974 23.6674 19.5552 23.121 20.121L16.242 27H51C51.7956 27 52.5587 27.3161 53.1213 27.8787C53.6839 28.4413 54 29.2044 54 30C54 30.7956 53.6839 31.5587 53.1213 32.1213C52.5587 32.6839 51.7956 33 51 33H16.242L23.121 39.879C23.6834 40.4416 23.9993 41.2045 23.9993 42C23.9993 42.7955 23.6834 43.5584 23.121 44.121Z" fill="white"/>
+            </svg>
+        </button>
+        <div class="header-logo">
+            <img src="/img/DogLogo.png" alt="DogLogo">
+            <p>DOG-API</p>
+        </div>
+        <div class="header-btn">
+            <button class="fav-btn" id="btn">Favorite</button>
+            <button class="upload-btn" id="btn">Upload</button>
+        </div>
+    </header>
+
+    <main>
+        <p class="alert"></p>
+        <section class="home-container">
+            <article class="dog-card" id="container1">
+                <button id="btn-fav1">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.516 15.516C11.7663 13.2663 14.818 12.0026 18 12.0026C21.182 12.0026 24.2337 13.2663 26.484 15.516L30 19.029L33.516 15.516C34.623 14.3699 35.9471 13.4557 37.4111 12.8268C38.8752 12.1979 40.4498 11.8668 42.0432 11.853C43.6365 11.8392 45.2167 12.1428 46.6914 12.7461C48.1662 13.3495 49.506 14.2405 50.6327 15.3673C51.7595 16.494 52.6505 17.8338 53.2539 19.3086C53.8572 20.7833 54.1609 22.3635 54.147 23.9568C54.1332 25.5502 53.8021 27.1248 53.1732 28.5889C52.5443 30.0529 51.6301 31.377 50.484 32.484L30 52.971L9.516 32.484C7.26635 30.2337 6.00256 27.182 6.00256 24C6.00256 20.818 7.26635 17.7663 9.516 15.516Z" fill="#EA0000"/>
+                    </svg>
+                </button>
+                <img  id="img1" src="/img/dogpuppy.jpg" alt="Dog Photo">
+            </article>
+    
+            <article class="dog-card" id="container2">
+                <button id="btn-fav2">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.516 15.516C11.7663 13.2663 14.818 12.0026 18 12.0026C21.182 12.0026 24.2337 13.2663 26.484 15.516L30 19.029L33.516 15.516C34.623 14.3699 35.9471 13.4557 37.4111 12.8268C38.8752 12.1979 40.4498 11.8668 42.0432 11.853C43.6365 11.8392 45.2167 12.1428 46.6914 12.7461C48.1662 13.3495 49.506 14.2405 50.6327 15.3673C51.7595 16.494 52.6505 17.8338 53.2539 19.3086C53.8572 20.7833 54.1609 22.3635 54.147 23.9568C54.1332 25.5502 53.8021 27.1248 53.1732 28.5889C52.5443 30.0529 51.6301 31.377 50.484 32.484L30 52.971L9.516 32.484C7.26635 30.2337 6.00256 27.182 6.00256 24C6.00256 20.818 7.26635 17.7663 9.516 15.516Z" fill="#EA0000"/>
+                    </svg>
+                </button>
+                <img  id="img2" src="/img/dogpuppy.jpg" alt="Dog Photo">
+            </article>
+
+            <article class="dog-card" id="container3">
+                <button  id="btn-fav3">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.516 15.516C11.7663 13.2663 14.818 12.0026 18 12.0026C21.182 12.0026 24.2337 13.2663 26.484 15.516L30 19.029L33.516 15.516C34.623 14.3699 35.9471 13.4557 37.4111 12.8268C38.8752 12.1979 40.4498 11.8668 42.0432 11.853C43.6365 11.8392 45.2167 12.1428 46.6914 12.7461C48.1662 13.3495 49.506 14.2405 50.6327 15.3673C51.7595 16.494 52.6505 17.8338 53.2539 19.3086C53.8572 20.7833 54.1609 22.3635 54.147 23.9568C54.1332 25.5502 53.8021 27.1248 53.1732 28.5889C52.5443 30.0529 51.6301 31.377 50.484 32.484L30 52.971L9.516 32.484C7.26635 30.2337 6.00256 27.182 6.00256 24C6.00256 20.818 7.26635 17.7663 9.516 15.516Z" fill="#EA0000"/>
+                    </svg>
+                </button>
+                <img id="img3" src="/img/dogpuppy.jpg" alt="Dog Photo">
+            </article>
+        </section>
+
+        <section class="fav-container inactive mySwiper">
+            <article class="dog-card">
+                <button class="dog-card-button">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M27 6C26.443 6.0003 25.8971 6.15565 25.4234 6.44866C24.9497 6.74166 24.567 7.16076 24.318 7.659L22.146 12H12C11.2044 12 10.4413 12.3161 9.87868 12.8787C9.31607 13.4413 9 14.2044 9 15C9 15.7956 9.31607 16.5587 9.87868 17.1213C10.4413 17.6839 11.2044 18 12 18V48C12 49.5913 12.6321 51.1174 13.7574 52.2426C14.8826 53.3679 16.4087 54 18 54H42C43.5913 54 45.1174 53.3679 46.2426 52.2426C47.3679 51.1174 48 49.5913 48 48V18C48.7957 18 49.5587 17.6839 50.1213 17.1213C50.6839 16.5587 51 15.7956 51 15C51 14.2044 50.6839 13.4413 50.1213 12.8787C49.5587 12.3161 48.7957 12 48 12H37.854L35.682 7.659C35.433 7.16076 35.0503 6.74166 34.5766 6.44866C34.1029 6.15565 33.557 6.0003 33 6H27ZM21 24C21 23.2044 21.3161 22.4413 21.8787 21.8787C22.4413 21.3161 23.2044 21 24 21C24.7956 21 25.5587 21.3161 26.1213 21.8787C26.6839 22.4413 27 23.2044 27 24V42C27 42.7957 26.6839 43.5587 26.1213 44.1213C25.5587 44.6839 24.7956 45 24 45C23.2044 45 22.4413 44.6839 21.8787 44.1213C21.3161 43.5587 21 42.7957 21 42V24ZM36 21C35.2044 21 34.4413 21.3161 33.8787 21.8787C33.3161 22.4413 33 23.2044 33 24V42C33 42.7957 33.3161 43.5587 33.8787 44.1213C34.4413 44.6839 35.2044 45 36 45C36.7956 45 37.5587 44.6839 38.1213 44.1213C38.6839 43.5587 39 42.7957 39 42V24C39 23.2044 38.6839 22.4413 38.1213 21.8787C37.5587 21.3161 36.7956 21 36 21Z" fill="#A24F2D"/>
+                    </svg>
+                </button>
+                <img class="dog-card-img" src="/img/dogpuppy.jpg" alt="Dog Photo"> 
+            </article>
+        </section>
+
+        <section class="upload-container inactive">
+            <h2>Upload a photo of your favorite Dog!</h2>
+            <form id="uploadingForm">
+                <input id="file" type="file" name="file">
+                <button type="button" onclick="uploadDogPhoto()">Upload Photo</button>
+            </form>
+        </section>
+
+        <div class="btn-home">
+            <button onclick="loadRandomDogs()" id="btn">New Dog</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>© All rights reserved | <a href="https://github.com/mariavnn">@mariavnn</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/src/nodes.js"></script>
+    <script src="/src/main.js"></script>
+    <script src="/src/navigation.js"></script>
+</body>
+</html>

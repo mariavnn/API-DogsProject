@@ -1,0 +1,14 @@
+{
+  "name": "dogsapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run build:assets && npm run build:src",
+    "build:assets": "xcopy .\\img\\*.* dist\\img\\",
+    "build:src": "xcopy .\\src\\*.* dist\\js\\"
+  },
+  "author": "@mariavnn",
+  "license": "MIT"
+}

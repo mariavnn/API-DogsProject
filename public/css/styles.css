@@ -1,0 +1,245 @@
+:root{
+    --light-brown: #F5DEAA;
+    --dark-brown: #D57E48;
+    --light-orange: #FF9A30;
+    --dark-orange: #FA8000;
+    --light-blue: #1C68BE;
+    --dark-blue: #395B76;
+    --green: #B6D369;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-image: url(/img/Background.png);
+    background-size: cover;
+    margin: 0;
+    padding-bottom: 50px;
+    position: relative;
+    min-height: 100vh;
+    
+}
+
+.alert{
+    width: 100%;
+    border-radius: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+
+    text-align: center;
+}
+
+.alert-danger {
+    color: #721c24;
+    background: #f8d7da;
+}
+
+.alert-success {
+    color: #155724;
+    background: #d4edda;
+}
+
+header{
+    width: 100%;
+    background-color: var(--light-brown);
+    display: flex;
+    padding: .5rem 0;
+}
+
+#btn{
+    border: none;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+}
+
+button{
+    cursor: pointer;
+}
+
+.header-arrow{
+    border: none;
+    background-color: transparent;
+    display: flex;
+    justify-content: start;
+    margin-left: 1rem;
+}
+
+.header-logo{
+    width: 40%;
+    display: flex;
+    margin-left: 3rem;
+}
+
+.header-logo img{
+    width: 120px;
+    height: 100px;
+}
+
+.header-logo p{
+    padding-top: .5rem;
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.header-btn{
+    width: 70%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1.5rem;
+    margin-right: 3rem;
+}
+
+.header-btn button{
+    background-color: var(--light-blue);
+}
+
+
+
+main{
+    margin-top: 2rem;
+    margin-left: 3rem;
+    padding: 2rem 7rem;
+    width: 95%;
+    border-radius: 20px;
+    background-color: rgba(182, 211, 105, 0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+main #btn{
+    background-color: var(--light-orange);
+}
+
+.home-container{
+    display: flex;
+    gap: 5rem;
+}
+
+.btn-home{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.dog-card{
+    width: 330px;
+    height: 400px;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+    margin-right: 10px;
+}
+
+.dog-card button{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    top: 20px; 
+    right: 20px; 
+    z-index: 1; 
+}
+
+.dog-card img{
+    margin: 1.5rem;
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+}
+
+.fav-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 1.5rem;
+}
+
+footer{
+    background-color: var(--light-brown);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 35px; 
+    color: white;
+    font-size: 20px; 
+    text-align: center; 
+    font-weight: bold;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.inactive{
+    display: none;
+}
+
+
+@media screen and (max-width: 767px) {
+    header {
+        flex-direction: column;
+    }
+
+    #btn{
+        font-size: 25px;
+        font-weight: bold;
+        color: white;
+        padding: 1rem 2rem;
+        border-radius: 20px;
+    }
+
+    .header-logo{
+        width: 100%;
+    }
+
+    .header-logo p{
+        font-size: 45px;
+        margin-left: .5rem;
+    }
+
+    .header-logo img{
+        width: 100px;
+        height: 80px;
+    }
+
+    .header-btn{
+        width: 100%;
+        justify-content: start;
+        /* align-items: center;
+        gap: 1.5rem; */
+        margin: 1rem 0 .5rem 2rem;
+    }
+    .dog-card{
+        width: 290px;
+    }
+
+    main{
+        width: 90%;
+        margin-left: 2rem;
+        padding: 2rem 3rem;
+    }
+    .fav-container{
+        grid-template-columns: auto;
+    }
+
+    
+}
